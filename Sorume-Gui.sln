@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorume-Gui", "Sorume-Gui\Sorume-Gui.csproj", "{C55E135E-BF08-4FB6-9507-D91965855109}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorume-Gui.Desktop", "Sorume-Gui.Desktop\Sorume-Gui.Desktop.csproj", "{CBC310A9-1FA3-4FA4-8ED2-D3132AE7FBF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C55E135E-BF08-4FB6-9507-D91965855109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C55E135E-BF08-4FB6-9507-D91965855109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C55E135E-BF08-4FB6-9507-D91965855109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C55E135E-BF08-4FB6-9507-D91965855109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC310A9-1FA3-4FA4-8ED2-D3132AE7FBF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC310A9-1FA3-4FA4-8ED2-D3132AE7FBF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC310A9-1FA3-4FA4-8ED2-D3132AE7FBF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC310A9-1FA3-4FA4-8ED2-D3132AE7FBF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7AC5CDF-7FA1-4C8C-98CB-295E609C8BB4}
+	EndGlobalSection
+EndGlobal
