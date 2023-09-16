@@ -4,9 +4,65 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:views="clr-namespace:Sorume_Gui.Views"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="600"
         x:Class="Sorume_Gui.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Sorume_Gui">
-        <views:MainView />
+        Title="Sorume_Gui"
+		Background="Transparent"
+		TransparencyLevelHint="AcrylicBlur"
+		ExtendClientAreaToDecorationsHint="False"
+		CanResize="False"
+		Width="500"
+		Height="600">
+	<Window.Styles>
+		<Style Selector="Label">
+			<Setter Property="Foreground" Value="White"/>
+		</Style>
+		<Style Selector="StackPanel">
+			<Setter Property="Background" Value="Transparent"/>
+		</Style>
+		<Style Selector="Button">
+			<Setter Property="HorizontalAlignment" Value="Center"></Setter>
+		</Style>
+	</Window.Styles>
+
+	<StackPanel Spacing="20">
+		<ExperimentalAcrylicBorder IsHitTestVisible="False">
+			<ExperimentalAcrylicBorder.Material>
+				<ExperimentalAcrylicMaterial
+					BackgroundSource="Digger"
+					TintColor="Black"
+					TintOpacity="1"
+					MaterialOpacity="0.65"/>
+			</ExperimentalAcrylicBorder.Material>
+		</ExperimentalAcrylicBorder>
+
+		<Label x:Name="TitleLabel"
+			   Content="Login"
+			   FontSize="40"
+			   FontFamily="Inter"
+			   VerticalAlignment="Top"/>
+
+		<Image x:Name="LogoImage" 
+			   Source="resm:Sorume-Gui.Resources.Images.logo_no_background.png?assembly=Sorume-GuiResources/Images/logo_no_background.png"
+			   Width="300"
+			   HorizontalAlignment="Center"
+			   VerticalAlignment="Top"/>
+		<StackPanel Spacing="5" Margin="40">
+			
+		<TextBox x:Name="UsernameTextBox"
+				 HorizontalContentAlignment="Center"
+				 BorderBrush="Transparent"
+				 Watermark="Username"/>
+		<TextBox x:Name="PasswordTextBox"
+				 PasswordChar="*"
+				 HorizontalContentAlignment="Center"
+				 BorderBrush="Transparent"
+				 Watermark="Password"/>
+		<Button x:Name="LoginButton"
+				Content="Login"
+				HorizontalAlignment="Stretch"
+				HorizontalContentAlignment="Center"/>
+		</StackPanel>
+	</StackPanel>
 </Window>

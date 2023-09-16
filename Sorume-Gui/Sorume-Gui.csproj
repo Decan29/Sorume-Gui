@@ -11,6 +11,16 @@
     <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
 
+  
+  <ItemGroup>
+    <None Remove="Resources\Images\logo_no_background.png" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\logo_no_background.png" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
